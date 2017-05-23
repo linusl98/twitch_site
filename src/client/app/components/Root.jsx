@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 
 import Home from './Home.jsx';
-import Header from './Header.jsx';
+
 
 const propTypes = {};
 
