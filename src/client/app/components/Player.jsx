@@ -1,3 +1,4 @@
+/* eslint linebreak-style: ["error", "windows"] */
 import React, { Component, PropTypes } from 'react';
 import 'twitch-embed';
 
@@ -14,8 +15,8 @@ const defaultProps = {
   video: '',
   play: false,
   options: {
-    width: 1024,
-    height: 768,
+    width: 800,
+    height: 650,
     channel: 'mrjagged',
   },
 };

@@ -1,5 +1,6 @@
 /* global document , fetch */
 /* eslint no-undef: "error" */
+/* eslint linebreak-style: ["error", "windows"] */
 
 import React, { Component } from 'react';
 import { render } from 'react-dom';
@@ -21,7 +22,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header />
+        {/* <Header /> */}
         <Root />
         {/* <Navbar>
           <Navbar.Header>

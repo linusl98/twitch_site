@@ -39,6 +39,7 @@
     "eslint-plugin-react": "^6.10.3",
     "file-loader": "^0.11.1",
     "image-webpack-loader": "^3.3.0",
+    "react-icons": "^2.2.5",
     "react-load-script": "0.0.3",
     "svg-react-loader": "^0.4.0-beta.2",
     "url-loader": "^0.5.8",

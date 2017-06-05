@@ -1,4 +1,6 @@
+/* eslint linebreak-style: ["error", "windows"] */
 import React, { PropTypes } from 'react';
+import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 
 const propTypes = {};
@@ -10,7 +12,7 @@ function Header(props) {
     <Navbar className="header" inverse collapseOnSelect>
       <Navbar.Header>
         <Navbar.Brand>
-          <a href="#">React-Bootstrap</a>
+          <Link to="/">Home</Link>
         </Navbar.Brand>
         <Navbar.Toggle />
       </Navbar.Header>

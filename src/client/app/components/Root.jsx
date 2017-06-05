@@ -1,8 +1,10 @@
+/* eslint linebreak-style: ["error", "windows"] */
 import React, { Component, PropTypes } from 'react';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import Home from './Home.jsx';
-
+import NonExistingPath from './NonExistingPath.jsx';
+import Header from './Header.jsx';
 
 const propTypes = {};
 
@@ -16,11 +18,15 @@ class Root extends Component {
 
   render() {
     return (
-      <div>
-        <BrowserRouter>
-          <Route exactPath="/" component={Home} />
-        </BrowserRouter>
-      </div>
+      <Router>
+        <div>
+          <Header />
+          <Switch>
+            <Route exactPath="/" component={Home} />
+            <Route path="*" component={NonExistingPath} />
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }
